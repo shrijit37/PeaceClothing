@@ -1,0 +1,90 @@
+a {
+  text-decoration: none !important;
+  outline: none;
+  color:black !important;
+}
+
+.navtop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+.topr 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:30px;
+}
+.topr h3{
+  font-size: 18px;
+  margin:10px;
+}
+.logo{
+  margin-left:900px;
+}
+
+
+.navbottom{
+  margin-top: 0px;
+}
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    height: 50px;
+  }
+  
+  .navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+    margin-left: 260px;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-item {
+    margin: 0 10px;
+    font-size: 19px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+ .search-input {
+    flex-grow: 1;
+    border:none;
+    outline:none;
+    background-color:transparent;
+    margin-left: 10px;
+    border-bottom: 1px solid black;
+  }
+  .search-input {
+    margin-right: 5px;
+  }
+  
+  .search-button {
+    padding: 5px 10px;
+  }
+
+
+  .logo{
+    margin-left : 38%;
+    height: 150px;
+    width : 300px;
+  }
+
+  .username{
+    margin-right:9px;
+    font-weight: bold;
+  }
