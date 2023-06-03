@@ -1,0 +1,18 @@
+.productimage{
+    height:200px;
+    width: 250px;
+}
+
+.fake{
+    color:red;
+    text-decoration: line-through;
+    display:inline;
+    cursor:default;
+    font-size: 14px;
+}
+.real{
+    display:inline;
+}
+.saving{
+    color:green;
+}

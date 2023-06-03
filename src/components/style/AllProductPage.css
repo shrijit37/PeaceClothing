@@ -1,0 +1,120 @@
+/* AddProduct.css */
+
+.heading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.allproductcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ProductContainer.css */
+
+.product-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.product-image {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  color: green;
+  margin-bottom: 10px;
+}
+
+.product-button {
+  background-color: #fa130b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin:3px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-button:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+product-button-green{
+  background-color: green;
+}
+product-button-green:hover{
+  background-color: black;
+  background-color: black;
+  transform: scale(1.05);
+}
+
+.allproductcontainer {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Zoom In Cart Effect */
+
+.zoom-in {
+  animation: zoomIn 0.5s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
+/* Responsive Styles */
+
+
+@media screen and (max-width: 768px) {
+  .allproductcontainer {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .allproductcontainer {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .product-image {
+    width: 150px;
+    height: 150px;
+  }
+}
