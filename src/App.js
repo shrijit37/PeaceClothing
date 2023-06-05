@@ -9,6 +9,7 @@ import AddProduct from "./components/AddProduct";
 import "./App.css";
 import ProductContainer from "./components/ProductContainer";
 import AllProductPage from "./components/AllProductPage";
+import SpecificProductPage  from "./components/SpecificProductPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route exact path = "product-type/men" element = {<AllProductPage type={"men"}/> }/>
           <Route exact path = "product-type/women" element = {<AllProductPage type={"women"}/> }/>
           <Route exact path = "product-type/sports" element = {<AllProductPage type={"sport"}/> }/>
+          <Route path="/product/:id/:title" element={<SpecificProductPage/>}/>
           <Route exact path = "*" element={<PfFOF/>}/>
           
         </Routes>

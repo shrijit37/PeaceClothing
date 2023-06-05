@@ -2,6 +2,7 @@ import React from "react";
 import "./style/productcontainer.css";
 import "./style/AllProductPage.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
 faCartShopping,
 faBagShopping
@@ -20,7 +21,9 @@ const ProductContainer = (product) => {
   return (
     <div className="product-container">
       <img src={product.product.productimage} className="productimage" />
+      <Link to="`/product/${product.product.id}/${product.product.producttitle}">
       <h3>{product.product.producttitle}</h3>
+      </Link>
       {/*product prices*/}
       <h6 className="fake">₹ {mrp}</h6>
       <h4 className="actual">₹ {product.product.productprice}</h4>

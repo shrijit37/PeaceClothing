@@ -4,7 +4,7 @@ const PfFOF = () => {
   return (
     <>
     <Navbar />
-    <div>404 Not found</div>
+    <div>404 Not found</div> 
     </>
 
   )
