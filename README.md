@@ -1,6 +1,6 @@
 
 
-###`An E-commerce clothing site made on ReactJS,CSS and Firebase`
+### `An E-commerce clothing site made on ReactJS,CSS and Firebase`
 
 ## Available Scripts
 
